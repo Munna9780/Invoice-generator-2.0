@@ -4,7 +4,21 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="manifest" href="/site.webmanifest">
     
+    <!-- Favicon for legacy browsers -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <!-- Modern browsers (maskable icons) -->
+    <link rel="icon" type="image/png" href="/web-app-manifest-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/web-app-manifest-512x512.png" sizes="512x512">
+    
+    <!-- Apple Touch Icon (iOS) -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- Theme and Color Meta Tags -->
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
     <!-- Primary Meta Tags -->
     <title>Professional Invoice Generator | Create Beautiful Invoices Instantly</title>
     <meta name="title" content="Professional Invoice Generator | Create Beautiful Invoices Instantly">
@@ -36,9 +50,19 @@
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://invoice-generator.com/">
+     <style>
+  footer p {
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+      <footer>
+    <p>&copy; 2025 InvoiceVibe. All rights reserved.</p>
+  </footer>
   </body>
 </html>
